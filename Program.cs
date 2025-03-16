@@ -49,3 +49,10 @@ app.MapControllerRoute(
     pattern: "{controller=Todos}/{action=Index}/{id?}");
 
 app.Run();
+
+
+//      - name: Install dotnet ef
+//        run: dotnet tool install --global dotnet-ef --version 8.*
+//
+//      - name: Create migrations bundle
+//        run: dotnet ef migrations bundle --runtime linux-x64 -o ${{env.DOTNET_ROOT}}/myapp/migrationsbundle
