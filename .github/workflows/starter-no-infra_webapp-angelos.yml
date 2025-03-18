@@ -29,8 +29,6 @@ jobs:
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
-        and why this part is always getting away:
-
       - name: Install dotnet ef
         run: dotnet tool install --global dotnet-ef --version 8.*
  
